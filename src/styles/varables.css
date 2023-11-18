@@ -1,0 +1,26 @@
+:root {
+    --blue: "#4785fe";
+  
+    /* shadow */
+    --body-cart-shadow: 0px 2px 24px rgba(15, 23, 42, 0.02);
+    --sidebar-shadow: 0px 2px 24px rgba(15, 23, 42, 0.02);
+  
+    --radius-12: 12px;
+    --radius-16: 16px;
+    --radius-24: 24px;
+  
+    /* -------------------- gradient -------------------- */
+    --gradient-1: linear-gradient(200deg, #4785fe 1.09%, #1849a7 100%);
+  
+    /* -------------------- gavno colors -------------------- */
+    --devider: #e5e7eb;
+    --light-mode-white-80: #eee;
+    --grey: #a6b1bb;
+    --primary-blue: #4785fe;
+    --background: #f6f6f6;
+    --primary-black: #10384f;
+    --green: #04ce00;
+    --red: #ff718b;
+    --stroke: #e5e7eb;
+    --table-lines-bg: #fafafa;
+  }
