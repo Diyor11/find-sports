@@ -1,1 +1,2 @@
-export {}
+export { Products } from "./home";
+
