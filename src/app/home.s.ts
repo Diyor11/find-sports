@@ -1,6 +1,9 @@
 "use client"
 import styled from "styled-components"
 
-export const H1 = styled.h1`
-  color: red;
+export const HomeWrap = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 `
