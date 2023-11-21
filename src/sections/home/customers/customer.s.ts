@@ -80,7 +80,7 @@ export const CustomerButton = styled.button`
 `;
 
 export const AvatarsWrap = styled.div`
-  display: "flex";
+  display: flex;
   /* gap: 10px; */
 `;
 
@@ -97,4 +97,5 @@ export const Avatar = styled(Image)`
   width: 36.99px;
   height: 37px;
   object-fit: cover;
+  margin-left: -15px;
 `;

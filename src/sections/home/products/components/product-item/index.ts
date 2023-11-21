@@ -1,2 +1,1 @@
-export { ProductItem } from "./ProductItem";
-
+export { ProductItem } from "../../../../../components/product-list/ProductItem";

@@ -1,0 +1,1 @@
+export { SortedProducts } from "./products";

@@ -5,15 +5,6 @@ export const AdvantagesWrap = styled.div`
   width: 100%;
 `;
 
-export const TitlesWrap = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
-`;
-
 export const SectionTitle = styled.h3`
   color: var(--blue-900, #01001f);
   text-align: center;
@@ -56,15 +47,6 @@ export const BoxWrap = styled.div`
   flex: 1 0 0;
   border-radius: 6px;
   box-shadow: 0px 6px 32px 0px rgba(170, 187, 198, 0.28);
-`;
-
-export const AdvantagesList = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const BoxTitle = styled.div`

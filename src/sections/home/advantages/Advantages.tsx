@@ -1,13 +1,11 @@
 import React from "react";
-import { Container } from "@/styles";
+import { Column, Container } from "@/styles";
 import {
-  AdvantagesList,
   AdvantagesWrap,
   BoxTitle,
   BoxWrap,
   SectionDescription,
   SectionTitle,
-  TitlesWrap,
 } from "./advantages.s";
 
 import Strategy from "@/assets/images/Strategy";
@@ -34,7 +32,12 @@ export const Advantages = () => {
   return (
     <AdvantagesWrap>
       <Container>
-        <TitlesWrap>
+        <Column
+          direction={"column"}
+          gap={16}
+          content={"center"}
+          items={"center"}
+        >
           <SectionTitle>
             Are you facing these{" "}
             <span>
@@ -48,15 +51,21 @@ export const Advantages = () => {
             and increase revenue. Register on our platform and place your
             object.
           </SectionDescription>
-          <AdvantagesList>
+          <Column
+            wrap={"wrap"}
+            gap={16}
+            items={"center"}
+            content={"center"}
+            width="100%"
+          >
             {advantages.map(({ Icon, label }, index) => (
               <BoxWrap key={index}>
                 <Icon width="70" height="70" />
                 <BoxTitle>{label}</BoxTitle>
               </BoxWrap>
             ))}
-          </AdvantagesList>
-        </TitlesWrap>
+          </Column>
+        </Column>
       </Container>
     </AdvantagesWrap>
   );

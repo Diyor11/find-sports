@@ -1,10 +1,23 @@
-import { Column, Container, Row } from "@/styles";
-import { ProductsDesc, ProductsTitle, ProductsWrap } from "./products.s";
-import { ProductItem } from "./components";
+"use client";
 
-const products = [1,2,3,4,5,6,7,8,9,]
+import { Column, Container } from "@/styles";
+import {
+  AllDataBtn,
+  ProductsDesc,
+  ProductsTitle,
+  ProductsWrap,
+  Radius,
+  Title,
+} from "./products.s";
+
+import { useRouter } from "next/navigation";
+
+import { ProductList } from "@/components";
+import NarrowRight from "@/assets/images/Narrow-Right";
 
 export const Products = () => {
+  const router = useRouter();
+
   return (
     <ProductsWrap>
       <Container>
@@ -13,12 +26,17 @@ export const Products = () => {
           Lorem ipsum dolor sit amet consectetur. Ipsum nibh risus vitae etiam
           vulputate. Leo ornare sed phasellus enim.
         </ProductsDesc>
-        <Column width="100%" gap={14}>
-          {products.map((product, index) => (
-            <Row size={3} difference={10.5} key={index} >
-              <ProductItem />
-            </Row>
-          ))}
+        <ProductList />
+        <Column
+          style={{ marginTop: "36px" }}
+          content={"center"}
+          items={"center"}
+        >
+          <AllDataBtn onClick={() => router.push("/products")}>
+            <Radius className="radius" />{" "}
+            <Title className="title">All ads</Title>
+            <NarrowRight className="right" />
+          </AllDataBtn>
         </Column>
       </Container>
     </ProductsWrap>

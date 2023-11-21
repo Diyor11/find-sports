@@ -1,5 +1,13 @@
-import { Advantages, Categories, Customers, Products } from "@/sections";
-import { HomeWrap } from "./home.s";
+import {
+  Advantages,
+  Categories,
+  Clients,
+  Companys,
+  Customers,
+  Faq,
+  Products,
+} from "@/sections";
+import { HomeWrap } from "./page.s";
 
 export default function Page() {
   return (
@@ -8,6 +16,9 @@ export default function Page() {
       <Products />
       <Advantages />
       <Customers />
+      <Companys />
+      <Clients />
+      <Faq />
     </HomeWrap>
   );
 }

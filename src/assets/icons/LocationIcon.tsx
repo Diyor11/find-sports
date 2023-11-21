@@ -6,38 +6,34 @@ interface ILocationIconProps {
   height?: string;
 }
 
-export const LocationIcon: FC<ILocationIconProps> = ({className = "", width = "24", height = '24'}) => {
+export const LocationIcon: FC<ILocationIconProps> = ({
+  className = "",
+  width = "24",
+  height = "24",
+}) => {
   return (
     <svg
       className={className}
       width={width}
       height={height}
       xmlns="http://www.w3.org/2000/svg"
-
       viewBox="0 0 18 19"
       fill="none"
     >
-      <g clip-path="url(#clip0_237_269)">
-        <path
-          d="M9 10.0176C10.2426 10.0176 11.25 9.01022 11.25 7.76758C11.25 6.52494 10.2426 5.51758 9 5.51758C7.75736 5.51758 6.75 6.52494 6.75 7.76758C6.75 9.01022 7.75736 10.0176 9 10.0176Z"
-          stroke="#01001F"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M9 1.76758C7.4087 1.76758 5.88258 2.39972 4.75736 3.52494C3.63214 4.65016 3 6.17628 3 7.76758C3 9.18658 3.3015 10.1151 4.125 11.1426L9 16.7676L13.875 11.1426C14.6985 10.1151 15 9.18658 15 7.76758C15 6.17628 14.3679 4.65016 13.2426 3.52494C12.1174 2.39972 10.5913 1.76758 9 1.76758V1.76758Z"
-          stroke="#01001F"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_237_269">
-          <rect y="0.267578" width="18" height="18" rx="6" fill="white" />
-        </clipPath>
-      </defs>
+      <path
+        d="M6 6.5C6.82843 6.5 7.5 5.82843 7.5 5C7.5 4.17157 6.82843 3.5 6 3.5C5.17157 3.5 4.5 4.17157 4.5 5C4.5 5.82843 5.17157 6.5 6 6.5Z"
+        stroke="#01001F"
+        stroke-width="0.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6 1C4.93913 1 3.92172 1.42143 3.17157 2.17157C2.42143 2.92172 2 3.93913 2 5C2 5.946 2.201 6.565 2.75 7.25L6 11L9.25 7.25C9.799 6.565 10 5.946 10 5C10 3.93913 9.57857 2.92172 8.82843 2.17157C8.07828 1.42143 7.06087 1 6 1V1Z"
+        stroke="#01001F"
+        stroke-width="0.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   );
 };

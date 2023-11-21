@@ -1,0 +1,1 @@
+export { ProductBoxes } from "./ProductBoxes";

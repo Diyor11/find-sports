@@ -1,1 +1,1 @@
-export {}
+export { answers } from "./trash";

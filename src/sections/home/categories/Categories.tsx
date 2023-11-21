@@ -49,7 +49,7 @@ export const Categories = () => {
         </SectionTitle>
         <CategoriesList>
           {categories.map(({ img, label }, index) => (
-            <CategoreItem key={index}>
+            <CategoreItem key={index} style={{ cursor: "pointer" }}>
               <CategoryBox>
                 <CategoryImg width={90} height={90} src={img.src} alt={label} />
               </CategoryBox>

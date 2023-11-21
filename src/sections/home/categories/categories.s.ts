@@ -46,6 +46,11 @@ export const CategoreItem = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    scale: 1.1;
+  }
 `;
 
 export const CategoryImg = styled(Image)`
