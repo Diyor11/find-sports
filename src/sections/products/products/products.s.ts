@@ -31,3 +31,65 @@ export const Box = styled.button`
   font-weight: 300;
   line-height: normal;
 `;
+
+export const InputSumWrap = styled.div`
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+`;
+
+export const InputLabel = styled.p`
+  overflow: hidden;
+  color: var(--blue-cray-900, #2a313a);
+  font-feature-settings: "clig" off, "liga" off;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Mulish;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+`;
+
+export const InputItems = styled.div`
+  display: flex;
+  height: 48px;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 6px;
+  border: 1px solid #e7eff4;
+  background: var(--imperceptible-white, #fdfdfd);
+`;
+
+export const InputSum = styled.input`
+  width: 131px;
+  height: 19px;
+  overflow: hidden;
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  border: none;
+
+  &::placeholder {
+    overflow: hidden;
+    color: #b6c3ca;
+    font-feature-settings: "clig" off, "liga" off;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+`;

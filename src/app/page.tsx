@@ -8,17 +8,21 @@ import {
   Products,
 } from "@/sections";
 import { HomeWrap } from "./page.s";
+import { Layout, Search } from "@/components";
 
 export default function Page() {
   return (
-    <HomeWrap>
-      <Categories />
-      <Products />
-      <Advantages />
-      <Customers />
-      <Companys />
-      <Clients />
-      <Faq />
-    </HomeWrap>
+    <Layout>
+      <HomeWrap>
+        <Search />
+        <Categories />
+        <Products />
+        <Advantages />
+        <Customers />
+        <Companys />
+        <Clients />
+        <Faq />
+      </HomeWrap>
+    </Layout>
   );
 }

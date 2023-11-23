@@ -1,3 +1,8 @@
+export { Header } from "./header";
+export { Layout } from "./layout";
+export { Search } from "./search";
+export { Logo } from "./logo";
+export { Footer } from "./footer";
 export { Carousel } from "./carousel";
 export { Backspace } from "./backspace";
 export { InputSelect } from "./select-input";

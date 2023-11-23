@@ -18,6 +18,22 @@ export const CustomersBox = styled.div`
     --dark-blue-gradient,
     linear-gradient(270deg, #5f5cf1 0%, #01001f 78.33%)
   );
+
+  @media screen and (max-width: 1000px) {
+    padding: 64px 150px;
+  }
+
+  @media screen and (max-width: 840px) {
+    padding: 64px 100px;
+  }
+
+  @media screen and (max-width: 840px) {
+    padding: 34px 70px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 24px 40px;
+  }
 `;
 
 export const CustomerElemets = styled.div`
@@ -25,6 +41,12 @@ export const CustomerElemets = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
 `;
 
 export const CustomerTitlesWrap = styled.div`
@@ -34,13 +56,18 @@ export const CustomerTitlesWrap = styled.div`
 `;
 
 export const CustomerTitle = styled.div`
-  max-width: 355px;
+  max-width: 365px;
   color: var(--white, #fff);
   font-family: K2D;
   font-size: 38px;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
+
+  @media screen and (max-width: 600px) {
+    font-size: 28px;
+    max-width: 400px;
+  }
 `;
 
 export const CustomerDescription = styled.div`
@@ -97,5 +124,5 @@ export const Avatar = styled(Image)`
   width: 36.99px;
   height: 37px;
   object-fit: cover;
-  margin-left: -15px;
+  margin-left: -8px;
 `;

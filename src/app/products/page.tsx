@@ -1,13 +1,16 @@
 import React from "react";
 import { ProductsWrap } from "./product.s";
 import { SortedProducts } from "@/sections";
-import { Backspace } from "@/components";
+import { Backspace, Layout, Search } from "@/components";
 
 export default function Page() {
   return (
-    <ProductsWrap>
-      <Backspace />
-      <SortedProducts />
-    </ProductsWrap>
+    <Layout>
+      <ProductsWrap>
+        <Search />
+        <Backspace />
+        <SortedProducts />
+      </ProductsWrap>
+    </Layout>
   );
 }

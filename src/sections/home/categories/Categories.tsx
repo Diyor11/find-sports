@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import {
   CategoreItem,
   CategoriesList,
@@ -23,6 +24,7 @@ import swim from "@/assets/trash/swim.png";
 import tennis from "@/assets/trash/tennis.png";
 import tennis2 from "@/assets/trash/tennis2.png";
 import voleybol from "@/assets/trash/voleybol.png";
+import axios from "axios";
 
 const categories = [
   { label: "Paintball", img: soldat, link: "/" },
@@ -41,11 +43,22 @@ const categories = [
 ];
 
 export const Categories = () => {
+  // useEffect(() => {
+  //   axios
+  //     .get("https://api.findsport.uz/v1")
+  //     .then((response) => {
+  //       console.log(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data:", error);
+  //     });
+  // }, []);
+
   return (
     <CategoriesWrap>
       <Container>
         <SectionTitle>
-          Tired of work? We have a useful offer for you.
+          "Tired of work? We have a useful offer <br /> for you."
         </SectionTitle>
         <CategoriesList>
           {categories.map(({ img, label }, index) => (

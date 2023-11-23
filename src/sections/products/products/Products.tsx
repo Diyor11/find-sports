@@ -1,8 +1,16 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Column, Container } from "@/styles";
 import { ProductList } from "@/components";
-import { Box, PaginationTitle, ProductsWrap } from "./products.s";
+import {
+  Box,
+  InputItems,
+  InputLabel,
+  InputSum,
+  InputSumWrap,
+  PaginationTitle,
+  ProductsWrap,
+} from "./products.s";
 import { InputSelect } from "@/components";
 
 import ArrowDown from "@/assets/icons/Chevron-DownIcon";
@@ -41,11 +49,15 @@ export const SortedProducts = () => {
               defaultValue="Barcha sprot turlari"
               optionValue={optionvalues}
             />
-            <InputSelect
-              label="Narx (sum)"
-              defaultValue="Narxi"
-              optionValue={optionvalues}
-            />
+
+            <InputSumWrap>
+              <InputLabel>Narxi (sum)</InputLabel>
+              <InputItems>
+                <InputSum type="number" placeholder="Minimum" />
+                <InputSum type="number" placeholder="Maximum" />
+              </InputItems>
+            </InputSumWrap>
+
             {search === "Bir-martalik" ? (
               <>
                 <InputSelect

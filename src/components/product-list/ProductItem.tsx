@@ -1,7 +1,8 @@
+"use client";
+
 import { Column } from "@/styles";
 import {
   Content,
-  Diteils,
   ProductImg,
   ProductPrice,
   ProductText,

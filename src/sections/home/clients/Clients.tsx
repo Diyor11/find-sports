@@ -66,6 +66,7 @@ export const Clients = () => {
                   </SaysWrap>
                 </SwiperWrap>
               </SwiperSlide>
+
               <SwiperSlide>
                 <SwiperWrap>
                   <HeroImg
@@ -85,6 +86,7 @@ export const Clients = () => {
                 </SwiperWrap>
               </SwiperSlide>
             </Swiper>
+
             <ClientsImg
               src={ClientsGroup}
               width={348}

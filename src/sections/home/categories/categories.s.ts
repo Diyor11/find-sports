@@ -24,6 +24,13 @@ export const CategoriesList = styled.div`
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
 `;
 
 export const CategoryBox = styled.div`
@@ -37,6 +44,11 @@ export const CategoryBox = styled.div`
   background: rgba(255, 255, 255, 0.32);
   box-shadow: 0px 4px 64px 0px rgba(52, 51, 76, 0.06);
   backdrop-filter: blur(6px);
+
+  @media screen and (max-width: 900px) {
+    width: 130px;
+    height: 130px;
+  }
 `;
 
 export const CategoreItem = styled.div`
@@ -56,7 +68,6 @@ export const CategoreItem = styled.div`
 export const CategoryImg = styled(Image)`
   width: 90px;
   height: 90px;
-  object-fit: cover;
 `;
 
 export const CategoryLabel = styled.p`

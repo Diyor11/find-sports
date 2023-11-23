@@ -54,6 +54,10 @@ export const MainItems = styled.div`
   align-items: center;
   justify-content: center;
   gap: 24px;
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const SwiperWrap = styled.div`
@@ -61,11 +65,22 @@ export const SwiperWrap = styled.div`
   gap: 24px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 700px) {
+    gap: 12px;
+  }
 `;
 
 export const HeroImg = styled(Image)`
-  width: 378.095px;
+  object-fit: cover;
+  max-width: 378.095px;
   height: 380px;
+
+  @media screen and (max-width: 600px) {
+    max-width: 260px;
+    height: 260px;
+  }
 `;
 
 export const SaysWrap = styled.div`
@@ -76,22 +91,31 @@ export const SaysWrap = styled.div`
 `;
 
 export const ClientName = styled.h4`
-  width: 247px;
+  max-width: 247px;
   color: var(--dark-green, #213d39);
   font-family: K2D;
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 export const ClientComment = styled.p`
+  max-width: 465px;
   color: var(--dark-green, #213d39);
   font-family: Mulish;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 
 export const ClientsImg = styled(Image)`
