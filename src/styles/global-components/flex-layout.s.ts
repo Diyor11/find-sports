@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import styled, { css } from "styled-components";
 
 export type TWrap = "wrap" | "nowrap";
@@ -17,7 +17,7 @@ export type TItems =
   | "stretch"
   | "baseline";
 export type TMedia = "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
-export type TSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
+export type TSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 export type TMediaNumber = { [K in TMedia]: TSizes };
 export type TMediaWrap = { [K in TMedia]?: TWrap };
 export type TMediaDirection = { [K in TMedia]?: TDirection };

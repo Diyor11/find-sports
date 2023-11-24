@@ -5,5 +5,5 @@ export const GroundsWrap = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 42px;
 `;

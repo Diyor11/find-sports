@@ -8,7 +8,7 @@ export const TitelWrap = styled.div`
 
 export const BoxT = styled.div`
   display: flex;
-  width: 821px;
+  max-width: 821px;
   padding: 32px 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -22,7 +22,11 @@ export const BoxHeader = styled.div`
   width: 100%;
   justify-content: space-between;
   display: flex;
-  /* gap: 440px; */
+
+  @media screen and (max-width: 440px) {
+    flex-direction: column;
+    justify-content: start;
+  }
 `;
 
 export const HeaderTitle = styled.p`

@@ -21,10 +21,10 @@ export const Titel = () => {
           <BoxHeader>
             <Column direction={"column"} gap={8}>
               <HeaderTitle>Зал единоборств "Золотой Дракон"</HeaderTitle>
-              <Row style={{ width: "100%" }} gap={5} items={"center"}>
+              <Column style={{ width: "100%" }} gap={5} items={"center"}>
                 <Rate>4.5</Rate>
                 <StarIcon width="12px" height="12px" />
-              </Row>
+              </Column>
             </Column>
             <Row items={"center"}>
               <ShareIcon />

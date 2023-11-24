@@ -2,8 +2,7 @@
 import React, { FC } from "react";
 import { Column, Container } from "@/styles";
 import { useRouter } from "next/navigation";
-import { SearchButton, SearchItems, SearchWrap } from "./search.s";
-import { SearchInput } from "./SearchInput";
+import { SearchButton, SearchInput, SearchItems, SearchWrap } from "./search.s";
 
 import { SearchMdIcon } from "@/assets/icons/SearchmdIdon";
 import { MarkerPinIcon } from "@/assets/icons/MarkerPInIcon";

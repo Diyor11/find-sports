@@ -1,5 +1,5 @@
 import React from "react";
-import { Column, Container } from "@/styles";
+import { Column, Container, Row } from "@/styles";
 
 import {
   ContactAvatar,
@@ -64,7 +64,7 @@ export const Main = () => {
           <Column gap={16}>
             <Carousel />
             <InfoBox>
-              <Column content={"space-between"} gap={420} items={"center"}>
+              <Column width="100%" content={"space-between"} items={"center"}>
                 <Column direction={"column"} gap={8}>
                   <Titel>Зал единоборств "Золотой Дракон"</Titel>
                   <Column items={"center"} gap={10}>

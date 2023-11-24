@@ -17,7 +17,11 @@ import { XOIcons } from "@/assets/icons/XOIcons";
 
 import { useRouter } from "next/navigation";
 
-export const ProductItem = () => {
+interface IProductItemProps {
+  isRow?: boolean;
+}
+
+export const ProductItem: React.FC<IProductItemProps> = ({ isRow }) => {
   const router = useRouter();
 
   return (

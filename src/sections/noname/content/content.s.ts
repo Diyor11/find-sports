@@ -16,17 +16,22 @@ export const FirstItemsWrap = styled.div`
   width: 100%;
   display: flex;
   gap: 16px;
+
+  @media screen and (max-width: 1300px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const RightItemsWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 403px;
 `;
 
 export const ContactBox = styled.div`
   display: flex;
-  width: 403px;
+  max-width: 403px;
   padding: 18px 20px;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +41,10 @@ export const ContactBox = styled.div`
   border-radius: 6px;
   background: #fff;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.05);
+
+  @media screen and (max-width: 460px) {
+    max-width: 303px;
+  }
 `;
 
 export const ContactNames = styled.div`
@@ -98,11 +107,15 @@ export const ContactButton = styled.button`
   font-weight: 500;
   line-height: normal;
   display: flex;
+
+  @media screen and (max-width: 460px) {
+    margin-left: 0;
+  }
 `;
 
 export const InfoBox = styled.div`
   display: flex;
-  width: 403px;
+  max-width: 403px;
   padding: 18px 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -110,13 +123,16 @@ export const InfoBox = styled.div`
   border-radius: 6px;
   background: #fff;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.05);
+
+  @media screen and (max-width: 460px) {
+    max-width: 303px;
+  }
 `;
 
 export const InfoBoxItem = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between !important;
-  /* gap: 180px; */
   align-items: center;
 `;
 
@@ -142,7 +158,7 @@ export const InfoBoxTitle = styled.p`
 
 export const LocationBox = styled.div`
   display: flex;
-  width: 402px;
+  max-width: 402px;
   padding: 18px 20px;
   gap: 12px;
   height: 156px;

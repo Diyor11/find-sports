@@ -43,16 +43,16 @@ const categories = [
 ];
 
 export const Categories = () => {
-  // useEffect(() => {
-  //   axios
-  //     .get("https://api.findsport.uz/v1")
-  //     .then((response) => {
-  //       console.log(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching data:", error);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios
+      .get("https://api.findsport.uz/v1")
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
 
   return (
     <CategoriesWrap>

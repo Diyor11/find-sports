@@ -20,6 +20,7 @@ export const SwiperBox = styled.div`
 `;
 
 export const BackImage = styled(Image)`
+  padding: 20px;
   width: 100%;
   height: 460px;
   object-fit: cover;

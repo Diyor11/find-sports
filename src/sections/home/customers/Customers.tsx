@@ -35,7 +35,7 @@ export const Customers = () => {
                 <Avatar width={37} height={37} alt="label" src={avatar} />
               </AvatarsWrap>
             </CustomerTitlesWrap>
-            <CustomerButton>Registrarion</CustomerButton>
+            <CustomerButton>Registration</CustomerButton>
           </CustomerElemets>
         </CustomersBox>
       </Container>

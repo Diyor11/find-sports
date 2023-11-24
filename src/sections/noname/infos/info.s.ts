@@ -16,7 +16,6 @@ export const SecondInfoBoxTitelsWrap = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* gap: 430px; */
   align-items: center;
 `;
 
@@ -99,7 +98,7 @@ export const LDescription = styled.p`
 
 export const SecondInfoBox = styled.div`
   display: flex;
-  width: 821px;
+  max-width: 821px;
   padding: 32px 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -111,7 +110,7 @@ export const SecondInfoBox = styled.div`
 
 export const CoachBox = styled.div`
   display: flex;
-  width: 821px;
+  max-width: 821px;
   padding: 32px 20px;
   flex-direction: column;
   align-items: flex-start;

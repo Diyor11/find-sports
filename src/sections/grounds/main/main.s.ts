@@ -9,12 +9,15 @@ export const MainWrap = styled.div`
 export const FlexWrap = styled.div`
   display: flex;
   gap: 16px;
+
+  @media screen and (max-width: 1300px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const InfoBox = styled.div`
   display: flex;
-  width: 821px;
-  height: 288px;
+  max-width: 821px;
   display: flex;
   padding: 32px 20px;
   flex-direction: column;
@@ -23,6 +26,18 @@ export const InfoBox = styled.div`
   border-radius: 6px;
   background: #fff;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.05);
+
+  @media screen and (max-width: 910px) {
+    max-width: 600px;
+  }
+
+  @media screen and (max-width: 680px) {
+    max-width: 400px;
+  }
+
+  @media screen and (max-width: 440px) {
+    max-width: 305px;
+  }
 `;
 
 export const Titel = styled.p`
@@ -78,6 +93,10 @@ export const PlaceInfo = styled.div`
   border-radius: 6px;
   background: #fff;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.05);
+
+  @media screen and (max-width: 470px) {
+    max-width: 303px;
+  }
 `;
 
 export const PalaceHeader = styled.div`
@@ -85,7 +104,6 @@ export const PalaceHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 200px; */
 `;
 
 export const PalaceInfoBox = styled.div`
@@ -140,7 +158,7 @@ export const MainTitle = styled.p`
 
 export const LocationBox = styled.div`
   display: flex;
-  width: 402px;
+  max-width: 402px;
   padding: 18px 20px;
   gap: 12px;
   height: 156px;
@@ -179,7 +197,7 @@ export const LSpan = styled.p`
 
 export const ContactBox = styled.div`
   display: flex;
-  width: 403px;
+  max-width: 403px;
   padding: 18px 20px;
   flex-direction: column;
   justify-content: center;
@@ -251,4 +269,8 @@ export const ContactButton = styled.button`
   font-weight: 500;
   line-height: normal;
   display: flex;
+
+  @media screen and (max-width: 430px) {
+    margin-left: 0px;
+  }
 `;

@@ -24,7 +24,7 @@ export const SearchItems = styled.div`
 `;
 
 export const SearchInput = styled.input`
-  min-width: 420px;
+  width: 420px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -42,6 +42,10 @@ export const SearchInput = styled.input`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+  }
 
   &::placeholder {
     overflow: hidden;

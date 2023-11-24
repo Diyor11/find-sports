@@ -15,6 +15,11 @@ export const HeaderItem = styled.div`
   align-items: center;
   background: var(--green-green-500, #01001f);
 
+  .mobile-navigations {
+    cursor: pointer;
+    display: none !important;
+  }
+
   @media screen and (max-width: 768px) {
     padding: 8px 70px;
   }
@@ -28,6 +33,10 @@ export const HeaderItem = styled.div`
       display: none !important;
     }
     padding: 8px 40px;
+
+    .mobile-navigations {
+      display: flex !important;
+    }
   }
 `;
 

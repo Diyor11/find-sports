@@ -63,9 +63,12 @@ export const Info = () => {
                   <StarIcon width="12px" height="12px" />
                 </Row>
               </Column>
-              <Row style={{ cursor: "pointer" }} items={"center"}>
-                <ShareIcon />
-                <HeartIcon />
+              <Row
+                style={{ cursor: "pointer", width: "auto", flexWrap: "wrap" }}
+                items={"center"}
+              >
+                <ShareIcon width="24px" height="24px" />
+                <HeartIcon width="24px" height="24px" />
               </Row>
             </SecondInfoBoxTitelsWrap>
             <PriceBox>
